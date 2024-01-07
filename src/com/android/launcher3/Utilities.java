@@ -199,6 +199,7 @@ public final class Utilities {
     public static final String KEY_SHOW_QUICKSPACE_WEATHER = "pref_quickspace_weather";
     public static final String KEY_SHOW_QUICKSPACE_WEATHER_CITY = "pref_quickspace_weather_city";
     public static final String KEY_SHOW_QUICKSPACE_WEATHER_TEXT = "pref_quickspace_weather_text";
+    public static final String KEY_WIDGET_FULL_WIDTH = "pref_widget_full_width";
 
     /**
      * Returns true if theme is dark.
@@ -1024,6 +1025,11 @@ public final class Utilities {
     public static boolean isSinglePageCentered(Context context) {
         SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
         return prefs.getBoolean(KEY_SINGLE_PAGE_CENTER, false);
+    }
+
+    public static boolean isWidgetFullWidth(Context context) {
+        SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
+        return prefs.getBoolean(KEY_WIDGET_FULL_WIDTH, false);
     }
 
     public static boolean showSearch(Context context) {

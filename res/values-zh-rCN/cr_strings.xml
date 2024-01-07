@@ -150,6 +150,9 @@
     <string name="short_parallax_summary">对数量较少的页面启用完整的壁纸滚动效果，而不是裁剪壁纸</string>
     <string name="single_page_center_title">单页居中</string>
     <string name="single_page_center_summary">如果只使用一个页面则居中壁纸</string>
+    <!-- Full width widgets -->
+    <string name="widget_full_width_title">全屏组件</string>
+    <string name="widget_full_width_summary">允许组件不重叠地贴边</string>
     <!-- App drawer searchbar -->
     <string name="drawer_search_title">应用搜索栏</string>
     <string name="drawer_search_summary">抽屉顶部搜索栏</string>

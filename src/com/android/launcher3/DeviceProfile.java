@@ -264,6 +264,7 @@ public class DeviceProfile {
 
     // Widgets
     private final ViewScaleProvider mViewScaleProvider;
+    private boolean mWidgetFullWidth;
 
     // Drop Target
     public int dropTargetBarSizePx;
@@ -647,11 +648,13 @@ public class DeviceProfile {
 
         calculateAndSetWorkspaceVerticalPadding(context, inv, extraSpace);
 
+        mWidgetFullWidth = Utilities.isWidgetFullWidth(context);
         int cellLayoutPadding =
                 isTwoPanels ? cellLayoutBorderSpacePx.x / 2 : res.getDimensionPixelSize(
                         R.dimen.cell_layout_padding);
-        cellLayoutPaddingPx = new Rect(cellLayoutPadding, cellLayoutPadding, cellLayoutPadding,
-                cellLayoutPadding);
+        int cellLayoutPaddingSide = (mWidgetFullWidth) ? 0 : cellLayoutPadding;
+        cellLayoutPaddingPx = new Rect(cellLayoutPaddingSide, cellLayoutPadding,
+                cellLayoutPaddingSide, cellLayoutPadding);
         updateWorkspacePadding();
 
         // Folder scaling requires correct workspace paddings
@@ -1567,7 +1570,7 @@ public class DeviceProfile {
                         workspacePageIndicatorHeight - mWorkspacePageIndicatorOverlapWorkspace;
             }
             int paddingTop = workspaceTopPadding + (mIsScalableGrid ? 0 : edgeMarginPx);
-            int paddingSide = desiredWorkspaceHorizontalMarginPx;
+            int paddingSide = (mWidgetFullWidth) ? 0 : desiredWorkspaceHorizontalMarginPx;
 
             padding.set(paddingSide, paddingTop, paddingSide, paddingBottom);
         }

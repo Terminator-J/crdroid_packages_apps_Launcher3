@@ -150,6 +150,9 @@
     <string name="short_parallax_summary">在主畫面頁數較少時使用桌布滾動，而非裁切部分桌布</string>
     <string name="single_page_center_title">單頁桌布置中</string>
     <string name="single_page_center_summary">主畫面頁數只有一頁時，使桌布置中</string>
+    <!-- Full width widgets -->
+    <string name="widget_full_width_title">全寬小工具</string>
+    <string name="widget_full_width_summary">允許小工具跨越整個寬度而不需留白</string>
     <!-- App drawer searchbar -->
     <string name="drawer_search_title">搜尋列</string>
     <string name="drawer_search_summary">應用程式清單頂部的搜尋列</string>

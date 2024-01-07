@@ -150,6 +150,9 @@
     <string name="short_parallax_summary">Ativar o efeito de rolagem de papel de parede completo em um número menor de páginas, em vez de cortar o papel de parede</string>
     <string name="single_page_center_title">Página única centralizada</string>
     <string name="single_page_center_summary">Centraliza o papel de parede ao usar apenas uma página</string>
+    <!-- Full width widgets -->
+    <string name="widget_full_width_title">Widgets em largura total</string>
+    <string name="widget_full_width_summary">Permitir que os widgets ocupem toda a largura sem preenchimento</string>
     <!-- App drawer searchbar -->
     <string name="drawer_search_title">Barra de pesquisa de aplicativos</string>
     <string name="drawer_search_summary">Barra de pesquisa na parte superior da gaveta de aplicativos</string>

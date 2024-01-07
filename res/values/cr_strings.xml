@@ -189,6 +189,10 @@
     <string name="single_page_center_title">Single page center</string>
     <string name="single_page_center_summary">Center wallpaper if only using a single page</string>
 
+    <!-- Full width widgets -->
+    <string name="widget_full_width_title">Full width widgets</string>
+    <string name="widget_full_width_summary">Allow widgets to span over the whole width without padding</string>
+
     <!-- App drawer searchbar -->
     <string name="drawer_search_title">App search bar</string>
     <string name="drawer_search_summary">Search bar on top of the app drawer</string>
