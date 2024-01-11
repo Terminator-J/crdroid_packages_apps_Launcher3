@@ -82,7 +82,7 @@ public class DeviceProfile {
     private static final int DEFAULT_DOT_SIZE = 100;
     private static final float ALL_APPS_TABLET_MAX_ROWS = 5.5f;
     private static final float MIN_FOLDER_TEXT_SIZE_SP = 16f;
-    private static final float MIN_WIDGET_PADDING_DP = 6f;
+    private static float MIN_WIDGET_PADDING_DP = 6f;
 
     public static final PointF DEFAULT_SCALE = new PointF(1.0f, 1.0f);
     public static final ViewScaleProvider DEFAULT_PROVIDER = itemInfo -> DEFAULT_SCALE;
@@ -1166,7 +1166,7 @@ public class DeviceProfile {
         folderIconOffsetYPx = (iconSizePx - folderIconSizePx) / 2;
 
         // Update widget padding:
-        float minSpacing = pxFromDp(MIN_WIDGET_PADDING_DP, mMetrics);
+        float minSpacing = mWidgetFullWidth ? 0f : pxFromDp(MIN_WIDGET_PADDING_DP, mMetrics);
         if (cellLayoutBorderSpacePx.x < minSpacing
                 || cellLayoutBorderSpacePx.y < minSpacing) {
             widgetPadding.left = widgetPadding.right =
